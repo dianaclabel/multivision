@@ -13,6 +13,7 @@
           --color3:#2bbfda;/*color principal*/
           --color4: #203646; /*color secundario*/
           --color5: #c8d4e2; /*color gris claro*/
+          --color6: #20364633; /*color de sombra*/
 
           /* Tipografías */
           --fuente1: 'Poppins', sans-serif; /*fuente principal*/
@@ -46,6 +47,7 @@
         img {
             /* Quita el espacio adicional que aparece debajo del objetos */
             display: block;
+            width: 100%;
         }
 
         /* Selector de estilos de tipo ID */
@@ -109,3 +111,20 @@
         .logo{
           width: 150px;
         }
+
+        .border-color{
+          border: 1px solid var(--color2);
+          margin-left: 5px;
+          margin-right: 5px;
+          padding-top: 5px;
+        }
+
+        .shadow-img{
+            box-shadow: 0 15px 20px 0 var(--color6);
+        }
+
+        .radius-img{
+            /* border-radius: 90px 0px 90px 0px;  */
+            border-radius: 200px 200px 200px 200px;
+        }
+
