@@ -25,6 +25,8 @@
             /* Eliminando los espacios predeterminados del navegador */
             margin: 0;
             padding: 0;
+            /*Evitar que el hijo cambie de tamaño cuando agregues padding o border*/
+          box-sizing: border-box;
         }
 
         /* Selector de estilos de tipo HTML */
@@ -77,6 +79,11 @@
             color: var(--color2);
         }
 
+        #clientes{
+            background-color: var(--color3);
+            color: var(--color1);
+        }
+
         #pie {
             background-color: var(--color4);
             color: var(--color5);
@@ -101,6 +108,7 @@
         .row{
           /* Activar el flexbox */
           display: flex;
+          flex-direction: row;
           flex-wrap: wrap;
 
           /* Anulan los padding left y right de la primera y última columna */
@@ -117,9 +125,71 @@
 
           padding-left: 15px;
           padding-right: 15px;
+
         }
 
-        .border-color{
+        .col-20{
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+
+        .col-25{
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+
+        .col-30{
+            flex-basis: 30%;
+            max-width: 30%;
+        }
+
+        .col-33{
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+        }
+
+         .col-40{
+            flex-basis: 40%;
+            max-width: 40%;
+        }
+
+        .col-50{
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .col-60{
+            flex-basis: 60%;
+            max-width: 60%;
+        }
+
+        .col-66{
+            flex-basis: 66.67%;
+            max-width: 66.67%;
+        }
+
+        .col-70{
+            flex-basis: 70%;
+            max-width: 70%;
+        }
+
+        .col-75{
+            flex-basis: 75%;
+            max-width: 75%;
+        }
+
+        .col-80{
+            flex-basis: 80%;
+            max-width: 80%;
+        }
+
+        .col-100{
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+
+        .border-col{
           border: 1px solid var(--color2);
           margin-left: 5px;
           margin-right: 5px;
@@ -129,7 +199,7 @@
         .row-justifycontent{
           /* Alinear el contenido de la fila al centro */
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
         }
 
         .row-topbar-link{
@@ -209,4 +279,8 @@
             color: var(--color1);
             border: 1px solid var(--color1);
 
+        }
+
+        .alinear-vertical{
+            align-items: center;
         }
