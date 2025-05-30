@@ -69,6 +69,12 @@
             color: var(--color2);
         }
 
+        #especialistas{
+            background-color: var(--color1);
+            color: var(--color2);
+            padding-top: 120px;
+        }
+
         #nosotros {
             background-color: var(--color3);
             color: var(--color1);
@@ -263,6 +269,7 @@
         .fijar-cabecera{
             position: sticky;
             top: 0px;
+            z-index: 1;
         }
 
         .scroll-up{
@@ -283,4 +290,25 @@
 
         .alinear-vertical{
             align-items: center;
+        }
+
+        .banner-padre{
+            position:relative;
+
+        }
+
+        .banner-hijo{
+            position:absolute;
+            /*coordenadad de pocisionaminto*/
+            bottom: -100px;
+            /* top:0px; */
+            left: calc(50% - 300px);
+
+            /*formato*/
+            width: 600px;
+            padding: 25px;
+            background-color: var(--color4);
+            color: var(--color1);
+            opacity: 0.8;
+            box-shadow:0 15px 20px 0 var(--color6);
         }
