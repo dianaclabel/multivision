@@ -50,7 +50,7 @@
             margin-bottom: 1em;
         }
 
-        img {
+        img , video, iframe {
             /* Quita el espacio adicional que aparece debajo del objetos */
             display: block;
             width: 100%;
@@ -311,4 +311,15 @@
             color: var(--color1);
             opacity: 0.8;
             box-shadow:0 15px 20px 0 var(--color6);
+        }
+
+        /*ajuste responsive del video*/
+        .video-fluid{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto 16:9 */
+        }
+
+        .mapa-fluid{
+            width: 100%;
         }
