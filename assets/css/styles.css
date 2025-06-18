@@ -95,6 +95,25 @@
             color: var(--color5);
         }
 
+        #titulo-pagina{
+            /* imagen de fondo */
+            background: #344856;
+            background: linear-gradient(90deg,rgba(52, 72, 86, 0.7) 50%, rgba(87, 199, 133, 0.5) 100%),url(../img/pagina-titulo.jpg);
+        
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            /* color de texto */
+            color: var(--color1);
+            padding: 45px 0px;
+        }
+
+        #titulo-pagina a{
+            color: var(--color1);
+            text-decoration: none; /* Quitar el subrayado de los enlaces */
+        }
+
         /* Selector de estilos de tipo CLASS */
         .padded {
             padding-top: 90px;
