@@ -107,27 +107,33 @@
         <h2> formulario de Contáctanos</h2>
         <div class="row">
           <div class="col col-70">
+            <!-- objeto formulario -->
             <form action="">
               <div class="row">
                 <div class="col col-50">
-                  <input type="text" placeholder="Nombre" required>
+                  <input class="form-field" type="text" placeholder="Nombre" required>
                 </div>
 
-                <div class="col">
-                  <input type="mail" placeholder="Correo electrónico" required>
+                <div class="col col-50">
+                  <input class="form-field" type="mail" placeholder="Correo electrónico" required>
                 </div>
-                <div class="col">
-                  <input type="tel" placeholder="Teléfono" required>
+                <div class="col col-50">
+                  <input class="form-field" type="tel" placeholder="Teléfono" required>
                 </div>
-                <div class="col">
-                  <input type="text" placeholder="Asunto" required>
+                <div class="col col-50">
+                  <input class="form-field" type="text" placeholder="Asunto" required>
                 </div>
                 <div class="col col-100">
-                  <input type="text" placeholder="captcha:¿2+3?" required>
+                  <textarea class="form-field form-noresize" placeholder="Déjenos su mensaje"></textarea>
                 </div>
-                <div>
-                  <input for="checkbox" required id="acepto-condiciones"></input>
-                  <label for="acepto-condiciones">He leído y acepto los <a href="">terminos y condiciones</a>acerca de
+                <div class="col col-100">
+                  <input class="form-field" type="text" placeholder="captcha:¿2+3?" required>
+                </div>
+                <div class="col col-100">
+                  <input type="checkbox" required id="acepto-condiciones"></input>
+                  <label for="acepto-condiciones">He leído y acepto los <a class="form-link"
+                      href="https://isil.pe/politicas-de-privacidad/" target="_blank">terminos y
+                      condiciones</a>acerca de
                     la
                     privacidad y uso
                     de mis datos persnales</label>

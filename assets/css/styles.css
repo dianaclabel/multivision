@@ -114,6 +114,17 @@
             text-decoration: none; /* Quitar el subrayado de los enlaces */
         }
 
+        #recomendacion{
+            background: rgba(52, 72, 86, 7.09);
+            background: linear-gradient(90deg,rgba(52, 72, 86, 0.7) 40%, rgba(128, 190, 121, 0.7) 100%), url(../img/fondo.jpg);
+        
+            background-repeat: no-repeat; /*No repetir la imagen*/
+            background-size: cover;
+            background-position: right center;
+            background-attachment: fixed;
+            padding: 70px 0px;
+        }
+
         /* Selector de estilos de tipo CLASS */
         .padded {
             padding-top: 90px;
@@ -128,6 +139,17 @@
         .img-fluid {
             width: 100%;
             height: auto;
+        }
+
+        .texto-recomendacion{
+            line-height: 1.5em;
+            font-size: 3em;
+            color: var(--color1);
+        }
+
+        .resaltar{
+            color: var(--color3);
+            font-weight: 600;
         }
 
         .row{
@@ -367,6 +389,7 @@
             margin-top: 15px;
             border: none;
             cursor: pointer;
+            width: 100%;
 
         }
     
