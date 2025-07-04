@@ -272,6 +272,8 @@
             border-radius: 200px 200px 200px 200px;
         }
 
+        /* Estilos para personalizar la barra de navegación */
+
          .nav-logo{
           width: 150px;
         }
@@ -305,6 +307,17 @@
             background-color: var(--color3);
             color: var(--color1);
             
+        }
+
+        /* Boton de hamburguesa */
+        .menu-toggle{
+           cursor: pointer;
+           font-size: 2em;
+           display: none;
+        }
+
+        .nav-menu.active{
+            display: flex;
         }
 
         .fijar-cabecera{
@@ -396,3 +409,96 @@
         .form-noresize{
             resize: none;
         }
+
+        /* Estilos para los breakpoints*/
+
+        /* para pantalla grande ( hasta 1200px) */
+
+        @media  screen and (max-with:1200px) {
+            .container{
+                max-width: 80%;
+            }
+            
+            #contactanos-formulario .row{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* para pantallas medianas ( hasta 992px) */
+        @media screen and (max-width:992px) {
+            .banner-hijo{
+                position: static;
+                width: 100%;
+            }
+
+            #nosotros .col{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            #clientes .col{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+
+            .container{
+                max-width: 85%;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .container{
+                max-width: 90%;
+            }
+
+            .padded{
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            #especialistas {
+                padding-top: 60px;
+            }
+
+            #especialistas{
+                padding-top: 60px;
+            } 
+
+            #especialistas .col, #promociones .col {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .nav-menu{
+                /*Posicionar el menu de navegación*/
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 0;
+
+                /*formato*/
+                background-color: var(--color4);
+                padding: 10px;
+                width: 30%; 
+                display: none;
+            }
+
+            .nav-menu-link{
+                display: block;
+                background-color: var(--color3);
+                color: var(--color1);
+                margin: 2px;
+                text-align: center;
+            }
+
+            .nav-menu-item{
+                margin-left: 0px;
+            }
+
+            .menu-toggle{
+                display: block;
+            }
+        }
+
+
